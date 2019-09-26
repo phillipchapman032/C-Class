@@ -11,9 +11,30 @@ namespace C_Class
         {
             //Console.WriteLine("Hello World!");
             //MyLesson5Example();
-            MyLesson6Examples();
+            //MyLesson6Examples();
             //MyLesson5Example();
+            MyLesson7Examples();
         } // End Method Main
+
+        static void MyLesson7Examples()
+        {
+            Lesson7 mySeven = new Lesson7();
+            mySeven.BasicMath();
+            mySeven.BasicModulus();
+            mySeven.MyCheckOperator1();
+            mySeven.MyCheckOperator2();
+            mySeven.MyLeftShiftOperator();
+            mySeven.MyRightShiftOperator();
+            mySeven.MyAndAssignmentOperator();
+            mySeven.MyOrAssignmentOperator();
+            mySeven.MyXOrAssignmentOperator();
+            mySeven.MyIncrementDecrementExample();
+
+
+
+        } // end method My Lesson 7 examples
+
+
         static void MyLesson6Examples()
         {
             Lesson6 mySix = new Lesson6();
@@ -21,7 +42,7 @@ namespace C_Class
             mySix.MyEqualsExample();
             mySix.MyLowerUpperExample();
             mySix.MyStringLength();
-            string myJoined = mySix.MyJoinedStrings("Happy","Coding");
+            string myJoined = mySix.MyJoinedStrings("Happy", "Coding");
             Console.WriteLine(myJoined);
             string myFav = mySix.MyStringBuilder("Buffalo Wings", 2);
             Console.WriteLine(myFav);
@@ -41,5 +62,5 @@ namespace C_Class
             myFive.LongFromInt();
         } // end method my lesson 5 examples
 
-     } // End Class
+    } // End Class
 } // end namespace
