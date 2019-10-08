@@ -17,7 +17,7 @@ namespace C_Class.Lseeons
         int _myIntValue = 25000;
 
         // range -9,223,372,036,854,775,808 to 9,223,372,036,854,775,907
-        long _myLongvalue = 1234567L;
+       internal long _myLongValue = 1234567L;
 
         // Integral - Unsigned
         // range 0 - 255

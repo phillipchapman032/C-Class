@@ -1,20 +1,98 @@
 ﻿using System;
 using C_Class.Lseeons;
+using C_Class;
+using CSharpClass.Lessons;
 
-namespace C_Class
+namespace CSharpClass
 {
     /*This class is the start of my application.
     Lesson 3 - My First Application */
-    class Program
+    class Progra
     {
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
-            //MyLesson5Example();
+            //MyLesson5Examples();
             //MyLesson6Examples();
-            //MyLesson5Example();
-            MyLesson7Examples();
+            //MyLesson7Examples();
+            // MyLesson8Examples();
+            //MyOtherLesson8Examples();
+            // MyLesson9Examples();
+            //MyLesson10Examples();
+            //MyLesson11Examples();
+            //MyBeerSong();
+            MyLesson12Examples();
         } // End Method Main
+
+        static void MyLesson12Examples()
+        {
+            Condo myCondo = new Condo();
+            myCondo.DoorOpenClose();
+
+
+            House myHouse = new Condo();
+            myHouse.DoorOpenClose();
+
+        }
+
+        static void MyBeerSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            Console.WriteLine(beer.LetsSing());
+        }
+
+        static void MyLesson11Examples()
+        {
+            Lesson11 myEleven = new Lesson11("Happy", 42);
+            Lesson11 myOtherEleven = new Lesson11(22);
+            Lesson11 myLesson11 = new Lesson11();
+
+            Lesson11Struct myStruct = new Lesson11Struct(9.99m, "King", "The Stand");
+            int myValue = 14;
+            myEleven.MyBasicRefExample(ref myValue);
+            Console.WriteLine(myValue + " from program");
+
+            string first, last;
+            myLesson11.MyBasicOutExample("Foghorn Leghorn", out first, out last);
+            Console.WriteLine(first);
+            Console.WriteLine(last);
+
+        } // end method my lesson 11 examples
+
+        static void MyLesson10Examples()
+        {
+            Lesson10 myTen = new Lesson10();
+            myTen.BasicPublicMethod();
+            Lesson5 myFive = new Lesson5();
+            myFive._myLongValue = 12345L; // can see because its internal
+
+        } // end method my lesson 10 examples
+
+        static void MyLesson9Examples()
+        {
+            Lesson9 myNine = new Lesson9();
+            myNine.BasicArray();
+            myNine.MultiArraySample();
+            myNine.My3DArrayExample();
+            myNine.MyJaggedArrayExample();
+
+        } // end method my lesson 9 examples
+
+        static void MyLesson8Examples()
+        {
+            Lesson8 myEight = new Lesson8();
+            myEight.BasicIfStatement();
+            myEight.BasicIfElseExample();
+            myEight.BasicIfElseChainExample();
+            myEight.BasicAndConditionExample();
+            Console.WriteLine(myEight.BasicOrConditionExample(11));
+            myEight.BasicTernaryOperatorExample(21);
+            myEight.BasicSwitchExample(3);
+            myEight.BasicWhileLoop();
+            myEight.BasicDoWhileLoopExample();
+            myEight.BasicForLoopExample(10);
+            myEight.BasicJumpStatementExample("Tuesday");
+        }
 
         static void MyLesson7Examples()
         {
