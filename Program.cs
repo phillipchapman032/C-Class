@@ -2,6 +2,7 @@
 using C_Class.Lseeons;
 using C_Class;
 using CSharpClass.Lessons;
+using C_Class.Lessons;
 
 namespace CSharpClass
 {
@@ -21,8 +22,20 @@ namespace CSharpClass
             //MyLesson10Examples();
             //MyLesson11Examples();
             //MyBeerSong();
-            MyLesson12Examples();
+            //MyLesson12Examples();
+            // MyLesson13House();
+            MyLesson14Examples();
         } // End Method Main
+
+        static void MyLesson14Examples()
+        {
+                Lesson14Static.CelsiusToFahrenheit("34.5");
+                Lesson14Static.FahrenheitToCelsius("64");
+
+                Lesson14Derived myLesson14 = new Lesson14Derived(8);
+                myLesson14.ShowResultFeet();
+                myLesson14.ShowResultMiles();
+        }
 
         static void MyLesson12Examples()
         {
