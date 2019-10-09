@@ -8,7 +8,7 @@ namespace CSharpClass
 {
     /*This class is the start of my application.
     Lesson 3 - My First Application */
-    class Progra
+    class program
     {
         static void Main(string[] args)
         {
@@ -24,8 +24,23 @@ namespace CSharpClass
             //MyBeerSong();
             //MyLesson12Examples();
             // MyLesson13House();
-            MyLesson14Examples();
+            //MyLesson14Examples();
+           // MyLesson15Examples();
         } // End Method Main
+
+            static void MyLesson15Examples()
+            {
+                Lesson15 my15 = new Lesson15();
+                my15.CheckExternalEnum();
+                my15.MyFavoriteFlavor(Lesson15.IceCreamFlavors.Chocolate);
+
+                my15[2] = 17;
+                for (int i = 0 ; i < my15.ConeArrayLength; i++)
+                {
+                    Console.WriteLine("Value of {0} = {1}", i, my15[i]);
+                } 
+            }
+
 
         static void MyLesson14Examples()
         {
